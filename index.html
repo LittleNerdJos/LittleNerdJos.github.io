@@ -14,8 +14,7 @@
 
 This is an online app for thinking about the spread of <a href="https://en.wikipedia.org/wiki/Invasive_species">invasive plants</a> (especially <a href="https://en.wikipedia.org/wiki/Weed">weeds</a>).
 <h2>Run the Simulation</h2>
-
-<!-- start of settings -->
+[toggle title="Settings"]
 <h2>Simulation Settings</h2>
 <div class="model-choice pick-num-weeds">
 <h3>How Many Starting Spots?</h3>
@@ -57,15 +56,15 @@ This is an online app for thinking about the spread of <a href="https://en.wikip
 <h3>Choose Your Own Starting Spots?</h3>
 <div class="switch"><input id="toggle-random" class="cmn-toggle cmn-toggle-round" type="checkbox" /><label for="toggle-random"></label></div>
 </div>
-<!-- end of settings -->
+[/toggle]
  
 <div class="button noborder large" style="position: relative; right: 20px;"><a id="next-year" class="button orange" href="#">Next</a></div>
 <div class="button noborder large"><a id="more-fields" class="button" href="#">Add a Field</a></div>
 <div class="button noborder large"><a id="reset-model" class="button gray" href="#">Reset</a></div>
 <div id="slider"></div>
-<!--[clear]-->
+[clear]
 <div id="land_wrapper"></div>
-<!--[clear]-->
+[clear]
 <h2>Questions to Consider</h2>
 [caption id="attachment_5312" align="alignright" width="150"]<img class="wp-image-5312 size-thumbnail" title="Space Invaders" src="https://i.ibb.co/W3KJkrL/invader-42007-960-720.png" alt="invader-42007_960_720" width="150" height="150" /> Space Invaders ≠ Plant Invaders[/caption]
 <ol>
@@ -80,20 +79,20 @@ This is an online app for thinking about the spread of <a href="https://en.wikip
  	<li>How well do the simulation results match known information about the plants?</li>
 </ol>
 <h2>More Information</h2>
-<!-- "How Does This Work?" -->
+[toggle title="How Does This Work?"]
 <h3>How Does This Work?</h3>
 This app uses a <a href="https://en.wikipedia.org/wiki/Mathematical_model">mathematical model</a> to simulate the spread of an invasive plant over time.  The model assumes a landscape is split into a grid of cells, so that each cell has a <em>suitability</em> (determined by the landscape and weed) which determines the probability of spread from an adjacent cell. The model is an example of a <a href="https://en.wikipedia.org/wiki/Stochastic_cellular_automaton">stochastic cellular automaton</a> and is implemented using <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>.
 <h3>Need the Data?</h3>
 <p>Coming soon, a feature to copy a log of all your simulations to analyze in a spreadsheet.</p>
 <textarea id="bar"><p>(This will be a table showing the log of your data)</p></textarea>
 <div class=" button noborder large" ><a id="copy-to-clipboard" class="button gray copy-btn" href="#" data-clipboard-target="#bar">Copy to Clipboard</a></div>
-<!--[/toggle][toggle title="What's the Point?"]-->
+[/toggle][toggle title="What's the Point?"]
 <h3>What's the Point?</h3>
 Simulators are a cheap and efficient way to generate "experimental data". Scientists use simulations like this to decide how well a mathematical model fits observations in the field, how changes in one or more factors might affect important outcomes, and how much predictions might change under various conditions.
 
 This simulator is also a good tool for learning about randomness and spatial spread. Students can use this tool to think about how a scientist might measure the rate at which an invasive species is spreading, as well as how a scientist might make a map for the suitability of a particular landscape for the growth of an invasive plant.
 
-<!-- "What Are These Plants?" -->
+[/toggle][toggle title="What Are These Plants?"]
 <h3>What Are These Plants?</h3>
 [caption id="attachment_4972" align="alignleft" width="110"]<img class="wp-image-4972" src="https://i.ibb.co/7SHwtgP/cheatgrass.jpg" alt="Cheatgrass" width="110" height="110" /> Cheatgrass[/caption]
 
@@ -113,11 +112,11 @@ This simulator is also a good tool for learning about randomness and spatial spr
 
 <strong><a href="http://www.ipm.ucdavis.edu/PMG/WEEDS/puncturevine.html">Puncturevine</a></strong> is a low-lying plant that often grows in disturbed or compact soil. Its fruit produces bunches of burs, sometimes called 'goatheads', which are so sharp that they often puncture bike tires and other soft materials.
 
-<!--[/toggle][toggle title="Who Can I Contact About This?"]-->
+[/toggle][toggle title="Who Can I Contact About This?"]
 <h3>Who Can I Contact About This?</h3>
 Joe Champion made this simulator in May 2016 for an upcoming professional development program at Boise State. The easiest way to contact him is via email: joechampion@boisestate.edu
 
-<!--[/toggle]-->
+[/toggle]
 
 
 </body>
