@@ -5,6 +5,13 @@
   padding: 5px;
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/**/
+
 /*LAND OCCUPANCY*/
 #land_wrapper {
 	margin: 20px auto;
