@@ -46,26 +46,64 @@
   </head>
   <body>
     <h1>Fish Taggers</h1>
-						
-<p>This app simulates the &ldquo;sample-tag-resample&rdquo; method for estimating the <a href="https://idoteach.boisestate.edu/modal/fish/" target="_blank" rel="noopener">population of fish in a lake</a>. The simulator creates a random number of fish of 3 types, depending on your choice of lake (if random, a new lake is generated). </p>
-<div id="sim-settings" class="row well">
-<div class="model-choice pick-lake-type">
-<h4>Choose a Lake</h4>
-<p><input type="radio" name="pick_lake_type" value="random" id="random" checked><label for="random"> Random</label><br><input type="radio" name="pick_lake_type" value="CDA" id="CDA"><label for="CDA"> Lake Coeur d&rsquo;Alene</label><br><input type="radio" name="pick_lake_type" value="Payette" id="Payette"><label for="Payette"> Payette Lake</label><br><input type="radio" name="pick_lake_type" value="Anderson" id="Anderson"><label for="Anderson"> Anderson Ranch Reservoir</label>
-</p></div>
-<div class="model-choice pick-sampsize">
-<h4>Number of Fish to Sample &amp; Tag</h4>
-<p><!-- <label class="dropdown" for="pick_sampsize"> --><select id="pick_sampsize" title="Number of Fish"><option value="10">10</option><option value="20">20</option><option value="30">30</option><option value="40">40</option><option value="50">50</option><option value="60">60</option><option value="70">70</option><option selected value="80">80</option><option value="90">90</option><option value="100">100</option><option value="200">200</option><option value="300">300</option><option value="400">400</option><option value="500">500</option></select><br><!-- </label> --></p>
-</div>
-<div class="model-choice pick-sampsize">
-<h4>Number of Fish to Resample after Tagging</h4>
-<p><!-- <label class="dropdown" for="pick_resample"> --><select id="pick_resample" title="Number of Fish to Resample"><option value="10">10</option><option value="20">20</option><option value="30">30</option><option selected value="40">40</option><option value="50">50</option><option value="100">100</option></select><br><!-- </label> --></p>
-</div>
-</div>
+				<div class="row">
+					<div class="col">
+						<p class="lead">This app simulates the &ldquo;sample-tag-resample&rdquo; method for estimating the <a
+								href="https://docs.google.com/document/d/1eB0ZplPz-rchd9W0ZKCdzYqB6fuX9J8v6W4lQ3GJKdY/edit?usp=sharing" target="_blank" rel="noopener">population of fish in
+								a lake</a>.
+							The simulator creates a random number of fish of 3 types, depending on your choice of lake (if random, a new
+							lake is generated). </p>
+					</div>
+				</div>
+<div id="sim-settings" class="row">
+	<div class="col">
+		<div class="model-choice pick-lake-type">
+			<h4>Choose a Lake</h4>
+			<p><input type="radio" name="pick_lake_type" value="random" id="random" checked><label for="random">
+					Random</label><br><input type="radio" name="pick_lake_type" value="CDA" id="CDA"><label for="CDA">
+					Lake Coeur d&rsquo;Alene</label><br><input type="radio" name="pick_lake_type" value="Payette"
+					id="Payette"><label for="Payette"> Payette Lake</label><br><input type="radio" name="pick_lake_type"
+					value="Anderson" id="Anderson"><label for="Anderson"> Anderson Ranch Reservoir</label>
+			</p>
+		</div>
+		<div class="model-choice pick-sampsize">
+			<h4>Number of Fish to Sample &amp; Tag</h4>
+			<p>
+				<!-- <label class="dropdown" for="pick_sampsize"> --><select id="pick_sampsize" title="Number of Fish">
+					<option value="10">10</option>
+					<option value="20">20</option>
+					<option value="30">30</option>
+					<option value="40">40</option>
+					<option value="50">50</option>
+					<option value="60">60</option>
+					<option value="70">70</option>
+					<option selected value="80">80</option>
+					<option value="90">90</option>
+					<option value="100">100</option>
+					<option value="200">200</option>
+					<option value="300">300</option>
+					<option value="400">400</option>
+					<option value="500">500</option>
+				</select><br><!-- </label> -->
+			</p>
+		</div>
+		<div class="model-choice pick-sampsize">
+			<h4>Number of Fish to Resample after Tagging</h4>
+			<p>
+				<!-- <label class="dropdown" for="pick_resample"> --><select id="pick_resample"
+					title="Number of Fish to Resample">
+					<option value="10">10</option>
+					<option value="20">20</option>
+					<option value="30">30</option>
+					<option selected value="40">40</option>
+					<option value="50">50</option>
+					<option value="100">100</option>
+				</select><br><!-- </label> -->
+			</p>
+		</div>
+	</div>
 
-
-<p></p></div></div>
-</div><!-- close sim-settings -->
+</div>
 
 <div id="accordion">
 		<div class="card">
