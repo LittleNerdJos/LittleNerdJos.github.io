@@ -1,408 +1,54 @@
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- base href="https://idoteach.boisestate.edu/modal/fish-taggers/" -->
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</head>
-<body>
-<!--[if HTML5]><![endif]-->
 <!doctype html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en-US"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en-US"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en-US"> <![endif]-->
-<!--[if IE 9 ]><html class="ie ie9" lang="en-US"> <![endif]-->
-<!--[if (gte IE 10)|!(IE)]><!--><html lang="en-US"> <!--<![endif]-->
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta charset="UTF-8" />
-<meta name="si_domain" content="https://idoteach.boisestate.edu/modal"/>
-<meta name="PageID" content="3322" />	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<title>Fish Taggers - MoDAL</title>
-
-<link rel="apple-touch-icon-precomposed" href="https://idoteach.boisestate.edu/modal/wp-content/themes/framewerk/framewerk/frontend/images/apple-touch-icon.png" />
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://idoteach.boisestate.edu/modal/wp-content/themes/framewerk/framewerk/frontend/images/apple-touch-icon-72x72.png" />
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://idoteach.boisestate.edu/modal/wp-content/themes/framewerk/framewerk/frontend/images/apple-touch-icon-114x114.png" />
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://idoteach.boisestate.edu/modal/wp-content/themes/framewerk/framewerk/frontend/images/apple-touch-icon-144x144.png" />
-<link rel="profile" href="http://gmpg.org/xfn/11" />
-
-<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
-<!-- Add CSS3 Rules here for IE 7-9
-================================================== -->
-
-<!--[if IE]>
-<style type="text/css">
-html.ie #navigation,
-html.ie a.button,
-html.ie .cta,
-html.ie .wp-caption,
-html.ie #breadcrumbs,
-html.ie a.more-link,
-html.ie .gallery .gallery-item img,
-html.ie .gallery .gallery-item img.thumbnail,
-html.ie .widget-container,
-html.ie #author-info {behavior: url("https://idoteach.boisestate.edu/modal/wp-content/themes/framewerk/framewerk/backend/includes/PIE.php");position: relative;}</style>
-<![endif]-->
-
-
-<!-- Mobile Specific Metas
-================================================== -->
-
-<meta name="viewport" content="width=device-width, initial-scale=1" /> 
-
-<meta name="theme-version" content="2.9.2" />
-
-<!-- Favicons
-================================================== -->
-
-<link rel="shortcut icon" href="https://idoteach.boisestate.edu/modal/wp-content/themes/framewerk/framewerk/frontend/images/layout/favicon.ico">
-
-<link rel="pingback" href="https://idoteach.boisestate.edu/modal/xmlrpc.php" />
-<link rel="stylesheet" id="custom" href="https://idoteach.boisestate.edu/modal/?get_styles=css" type="text/css" media="all" />
-
-<!-- www.Cludo.com search start CSS -->
-<link href="//customer.cludo.com/assets/765/9008/cludo-search.min.css" type="text/css" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- www.Cludo.com search end CSS   -->
-
-
-<!-- This site is optimized with the Yoast SEO plugin v11.6 - https://yoast.com/wordpress/plugins/seo/ -->
-<link rel="canonical" href="https://idoteach.boisestate.edu/modal/fish-taggers/" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="Fish Taggers - MoDAL" />
-<meta property="og:description" content="This app simulates the &ldquo;sample-tag-resample&rdquo; method for estimating the population of fish in a lake. The simulator creates a random number of fish of 3 types, depending on your choice of lake (if random, a new lake is generated). Choose ;hellip;" />
-<meta property="og:url" content="https://idoteach.boisestate.edu/modal/fish-taggers/" />
-<meta property="og:site_name" content="MoDAL" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:description" content="This app simulates the &ldquo;sample-tag-resample &rdquo; method for estimating the population of fish in a lake. The simulator creates a random number of fish of 3 types, depending on your choice of lake (if random, a new lake is generated). Choose ;hellip;" />
-<meta name="twitter:title" content="Fish Taggers - MoDAL" />
-<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://idoteach.boisestate.edu/modal/#website","url":"https://idoteach.boisestate.edu/modal/","name":"MoDAL","potentialAction":{"@type":"SearchAction","target":"https://idoteach.boisestate.edu/modal/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://idoteach.boisestate.edu/modal/fish-taggers/#webpage","url":"https://idoteach.boisestate.edu/modal/fish-taggers/","inLanguage":"en-US","name":"Fish Taggers - MoDAL","isPartOf":{"@id":"https://idoteach.boisestate.edu/modal/#website"},"datePublished":"2016-06-22T23:02:31+00:00","dateModified":"2017-06-29T11:56:19+00:00"}]}</script>
-<!-- / Yoast SEO plugin. -->
-
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="MoDAL ;raquo; Feed" href="https://idoteach.boisestate.edu/modal/feed/" />
-<link rel="alternate" type="application/rss+xml" title="MoDAL ;raquo; Comments Feed" href="https://idoteach.boisestate.edu/modal/comments/feed/" />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/idoteach.boisestate.edu\/modal\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.2"}};
-			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]));;(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext;;k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything;;c.supports[j[i]],"flag"!==j[i];;(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag;;c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag;;!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState;;c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji;;g.twemoji;;(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-<link rel='stylesheet' id='theme-css'  href='https://idoteach.boisestate.edu/modal/wp-content/themes/framewerk/framewerk/frontend/css/theme.css?ver=2.9.2' type='text/css' media='screen, projection' />
-<link rel='stylesheet' id='responsive-css'  href='https://idoteach.boisestate.edu/modal/wp-content/themes/framewerk/framewerk/frontend/css/responsive.css?ver=2.9.2' type='text/css' media='screen, projection' />
-<link rel='stylesheet' id='googlefonts-css'  href='https://fonts.googleapis.com/css?family=Oswald%3A400%2C700%2C300%7CLato%3A700%2C400%2C300%2C100%2Citalic%2C700italic%2C400;#038;ver=2.9.2' type='text/css' media='screen, projection' />
-<link rel='stylesheet' id='print-css'  href='https://idoteach.boisestate.edu/modal/wp-content/themes/framewerk/framewerk/frontend/css/print.css?ver=2.9.2' type='text/css' media='print' />
-<link rel='stylesheet' id='wp-block-library-css'  href='https://idoteach.boisestate.edu/modal/wp-includes/css/dist/block-library/style.min.css?ver=5.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='tablepress-default-css'  href='https://idoteach.boisestate.edu/modal/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2' type='text/css' media='all' />
-<script type='text/javascript' src='https://idoteach.boisestate.edu/modal/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
-<script type='text/javascript' src='https://idoteach.boisestate.edu/modal/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<link rel='https://api.w.org/' href='https://idoteach.boisestate.edu/modal/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://idoteach.boisestate.edu/modal/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://idoteach.boisestate.edu/modal/wp-includes/wlwmanifest.xml" />
-<link rel='shortlink' href='https://idoteach.boisestate.edu/modal/?p=3322' />
-<link rel="alternate" type="application/json+oembed" href="https://idoteach.boisestate.edu/modal/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fidoteach.boisestate.edu%2Fmodal%2Ffish-taggers%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://idoteach.boisestate.edu/modal/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fidoteach.boisestate.edu%2Fmodal%2Ffish-taggers%2F;#038;format=xml" />
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-1250107-2', 'auto');
-  ga('send', 'pageview');
-
-</script>
-<style type="text/css" id="sns_global_styles">td {vertical-align:top;}
-.above-local-nav-sidebar .widget-container{margin:0;}
-a.logo-link{display:inline-block;}
-.above-local-nav-sidebar{margin-bottom:-10px;}
-blockquote{clear:none;}
-.lesson-thumb{text-align:center;}
-.cta{float:none;}
-</style>
-<style type="text/css" id="sns_styles">
-#sample div, #lake div, #tagged div, #fish_in_lake div {
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-	margin:10px;
-}
-.whitefish.tagged {
-    background-image:url('https://i.ibb.co/qn5hH6g/whitefish-tag.jpg');
-}
-.whitefish{
-	background-image:url('https://i.ibb.co/D9PHfGY/whitefish.jpg');
-}
-.trout.tagged {
-    background-image:url('https://i.ibb.co/7g6NqRM/trout-tag.jpg');
-}
-.trout{
-	background-image:url('https://i.ibb.co/HNs81Nb/trout.jpg');
-}
-.bass.tagged {
-    background-image:url('https://i.ibb.co/bB8f3ty/bass-tag.jpg');
-}
-.bass{
-	background-image:url('https://i.ibb.co/Xt3Yn1V/bass.jpg');
-}
-</style>
-
-<script type="text/javascript" id="sns_scripts_in_head">
-(function($) {
-	$(document).ready(function () {
-		
-	$( window ).resize(function() {
-		//adjust size of images based on width of objects
-	  return false;
-	});
-	/*
-	*		LOGIC:
-	*			1. Choose fish in lake.
-	*			2. Make a lake (of random size with chosen fish).
-	*			3. Tag a sample of fish in the lake (by clicking on a fixed number of fish).
-	* 			4. Keep track of total number of tagged fish of each type.
-	*			5. Get a sample of fish (tagged and non-tagged).
-	*			6. Sort sample of fish at user request.
-	*
-	*/
-	// 1. 
-		
-	// SET-UP PARAMETERS FOR THE MODEL
-		var fish = ['trout','whitefish','bass']; // get from .fishes checkboxes	
-		
-		var lake_pop = make_lake(501,1000, "random");
-		var lake_tagged =[];
-		var lake_not_tagged = [];
-		var lake_sampled = [];
-		
-		var initial_tag = false;
-		
-		$('#run-sample').click(function(event){
-			event.preventDefault();
-			simulate_tagging();
-			initial_tag = true;
-			$('#run-resample').show();
-			return false;
-		});
-		$('input[name=pick_lake_type]').click(function(event){
-			var lake_type = $('input[name=pick_lake_type]:checked').val();
-			lake_pop = make_lake(501, 1000, lake_type);
-		});
-		$('#run-resample').click(function(event){
-			event.preventDefault();
-			if(initial_tag){
-				simulate_resampling();
-			}
-			return false;
-		});
-
-		insert_by_class(lake_pop, "lake");
-		
-		function simulate_tagging(){
-			var sampsize = document.getElementById("pick_sampsize");
- 		    var sampsize_n = sampsize.options[sampsize.selectedIndex].value;
-			lake_pop = sample_and_tag_lake(sampsize_n);
-			insert_by_class(lake_tagged, "tagged");
-			insert_by_class(lake_pop, "lake");
+	<title>Fish Taggers</title>
+	
+	<style type="text/css" id="sns_global_styles">td {vertical-align:top;}
+		.above-local-nav-sidebar .widget-container{margin:0;}
+		a.logo-link{display:inline-block;}
+		.above-local-nav-sidebar{margin-bottom:-10px;}
+		blockquote{clear:none;}
+		.lesson-thumb{text-align:center;}
+		.cta{float:none;}
+		#sample div, #lake div, #tagged div, #fish_in_lake div {
+			display: inline-block;
+			width: 80px;
+			height: 80px;
+			margin:10px;
 		}
-		
-		function simulate_resampling(){
-			var resample = document.getElementById("pick_resample");
- 		    var resample_n = resample.options[resample.selectedIndex].value;
-			// console.log(resample_n);
-			lake_sampled = sample_lake( resample_n);
-			insert_by_class(lake_sampled, "sample");
-		}	
-		
-		function sample_and_tag_lake( n_tag ){
-			lake_pop = shuffle(lake_pop);
-			lake_tagged = lake_pop.slice(0, n_tag); // or n-1?
-			lake_tagged = lake_tagged.map(function(x) { return x + " tagged"; });
-			lake_non_tagged = lake_pop.slice(n_tag, lake_pop.length-1);
-			return shuffle(lake_tagged.concat(lake_non_tagged));
+		.whitefish.tagged {
+			background-image:url('https://i.ibb.co/qn5hH6g/whitefish-tag.jpg');
 		}
-		
-		function sample_lake (n_samp){
-			lake_pop = shuffle(lake_pop);
-			return( lake_pop.slice(0, n_samp) ); // or n-1?
+		.whitefish{
+			background-image:url('https://i.ibb.co/D9PHfGY/whitefish.jpg');
 		}
-		
-		
-		// make a long array of fish using proportions from a lake
-		function make_lake( min_n, max_n, lake_type){
-			console.log("### Lake Type = "+lake_type);
-			var inipop=[];
-			var lake_N;
-			var fish_props =[];
-			
-			if(lake_type == "random"){
-				console.log("!New Random Lake!!")
-				//random sized lake
-			    lake_N = min_n + Math.floor((max_n-min_n)*Math.random());
-				
-				//random proportions of fish in the lake
-				for (j=0; j< fish.length; j++){
-					var propsum = fish_props.reduce(function (a, b) { return a + b; }, 0); // sum the array
-				
-					if(j==fish.length-1){
-						fish_props.push(1 - propsum);
-					}
-					else{
-						fish_props.push( Math.max( (1-propsum)/(fish.length-j+1)*Math.random(),(1-propsum)/(2*fish.length) ));
-					}
-				}
-			}
-			else {
-				if (lake_type=="CDA"){
-					lake_N =1575;
-					fish_props = [.525,.3,.175];
-				}
-				if (lake_type=="Payette"){
-					lake_N = 2022;
-					fish_props = [.385,.285,1-(.385+.285)]
-				}
-				if(lake_type =="Anderson"){
-					lake_N = 2060;
-					fish_props = [.26,.33,.41]
-				}
-				
-			}
-			
-			
-			//console.info(fish_props);
-			for (j=0; j< fish.length; j++){
-				var temp_n = Math.round(lake_N*fish_props[j]);
-				//console.log(temp_n);
-				var new_pop = Array.apply(null, Array(temp_n)).map(function (x, i) { 
-										return fish[j]; 
-									});
-				//console.info(new_pop);
-				inipop = inipop.concat(new_pop);
-				console.log( 'Number of '+fish[j]+' = '+temp_n );
-			    
-			
-			}
-			lake_N = inipop.length;
-			console.log( 'Total lake population = '+lake_N );
-			return shuffle(inipop);
+		.trout.tagged {
+			background-image:url('https://i.ibb.co/7g6NqRM/trout-tag.jpg');
 		}
-		
-		// convert an array of class names to a bunch of html DOM elements
-		function insert_by_class (class_array, targetid){
-			var target = document.getElementById(targetid);
-			target.innerHTML = "";
-			for (var c in class_array) {
-				var newElement = document.createElement('div');
-				newElement.className = class_array[c];
-				target.appendChild(newElement);
-			}
+		.trout{
+			background-image:url('https://i.ibb.co/HNs81Nb/trout.jpg');
 		}
-		// randomize an array
-		function shuffle(array) {
-			  var currentIndex = array.length, temporaryValue, randomIndex;
-			
-			  // While there remain elements to shuffle...
-			  while (0 !== currentIndex) {
-			
-				// Pick a remaining element...
-				randomIndex = Math.floor(Math.random() * currentIndex);
-				currentIndex -= 1;
-			
-				// And swap it with the current element.
-				temporaryValue = array[currentIndex];
-				array[currentIndex] = array[randomIndex];
-				array[randomIndex] = temporaryValue;
-			  }
-			
-			  return array;
+		.bass.tagged {
+			background-image:url('https://i.ibb.co/bB8f3ty/bass-tag.jpg');
 		}
-		
-	}); // end document.ready
-})(jQuery);
-</script>
-</head>
+		.bass{
+			background-image:url('https://i.ibb.co/Xt3Yn1V/bass.jpg');
+		}
+		</style>
 
-<body class="page-template-default page page-id-3322">
-
-		<body>
-
-				<!-- Static navbar -->
-				<nav class="navbar navbar-default navbar-static-top">
-				  <div class="container">
-					<div class="navbar-header">
-					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					  </button>
-					  <a class="navbar-brand" href="#">Project name</a>
-					</div>
-					<div id="navbar" class="navbar-collapse collapse">
-					  <ul class="nav navbar-nav">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
-						<li class="dropdown">
-						  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-						  <ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li role="separator" class="divider"></li>
-							<li class="dropdown-header">Nav header</li>
-							<li><a href="#">Separated link</a></li>
-							<li><a href="#">One more separated link</a></li>
-						  </ul>
-						</li>
-					  </ul>
-					  <ul class="nav navbar-nav navbar-right">
-						<li><a href="../navbar/">Default</a></li>
-						<li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li>
-						<li><a href="../navbar-fixed-top/">Fixed top</a></li>
-					  </ul>
-					</div><!--/.nav-collapse -->
-				  </div>
-				</nav>
-			
-			
-				<div class="container">
-			
-				  <!-- Main component for a primary marketing message or call to action -->
-				  <div class="jumbotron">
-					<h1>Navbar example</h1>
-					<p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-					<p>To see the difference between static and fixed top navbars, just scroll.</p>
-					<p>
-					  <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs »</a>
-					</p>
-				  </div>
-
-				  <div id="post-3322" class="post-3322 page type-page status-publish hentry">
-					
-															
-						<h1 class="entry-title">Fish Taggers</h1>
+  </head>
+  <body>
+    <h1>Fish Taggers</h1>
 						
-														<div class="entry-content">
-						
+	<div class="entry-content">
+
 <p>This app simulates the &ldquo;sample-tag-resample&rdquo; method for estimating the <a href="https://idoteach.boisestate.edu/modal/fish/" target="_blank" rel="noopener">population of fish in a lake</a>. The simulator creates a random number of fish of 3 types, depending on your choice of lake (if random, a new lake is generated). </p>
 <div id="sim-settings">
 <div class="model-choice pick-lake-type">
@@ -430,20 +76,185 @@ blockquote{clear:none;}
 <div class="list"><p class="trigger"><a href="#">All Fish in Lake</a></p><div class="toggle_container"><div class="block">
 <div id="lake"></div>
 <p></p></div></div></div>
-																	</div><!-- .entry-content -->
-				</div><!-- #post-## -->
-			
-				</div> <!-- /container -->
-			
-			
-				<!-- Bootstrap core JavaScript
-				================================================== -->
-				<!-- Placed at the end of the document so the pages load faster -->
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-				<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-				<script src="../../dist/js/bootstrap.min.js"></script>
-				<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-				<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-			  
+				</div><!-- .entry-content -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		(function($) {
+			$(document).ready(function () {
+				
+			$( window ).resize(function() {
+				//adjust size of images based on width of objects
+			  return false;
+			});
+			/*
+			*		LOGIC:
+			*			1. Choose fish in lake.
+			*			2. Make a lake (of random size with chosen fish).
+			*			3. Tag a sample of fish in the lake (by clicking on a fixed number of fish).
+			* 			4. Keep track of total number of tagged fish of each type.
+			*			5. Get a sample of fish (tagged and non-tagged).
+			*			6. Sort sample of fish at user request.
+			*
+			*/
+			// 1. 
+				
+			// SET-UP PARAMETERS FOR THE MODEL
+				var fish = ['trout','whitefish','bass']; // get from .fishes checkboxes	
+				
+				var lake_pop = make_lake(501,1000, "random");
+				var lake_tagged =[];
+				var lake_not_tagged = [];
+				var lake_sampled = [];
+				
+				var initial_tag = false;
+				
+				$('#run-sample').click(function(event){
+					event.preventDefault();
+					simulate_tagging();
+					initial_tag = true;
+					$('#run-resample').show();
+					return false;
+				});
+				$('input[name=pick_lake_type]').click(function(event){
+					var lake_type = $('input[name=pick_lake_type]:checked').val();
+					lake_pop = make_lake(501, 1000, lake_type);
+				});
+				$('#run-resample').click(function(event){
+					event.preventDefault();
+					if(initial_tag){
+						simulate_resampling();
+					}
+					return false;
+				});
+		
+				insert_by_class(lake_pop, "lake");
+				
+				function simulate_tagging(){
+					var sampsize = document.getElementById("pick_sampsize");
+					 var sampsize_n = sampsize.options[sampsize.selectedIndex].value;
+					lake_pop = sample_and_tag_lake(sampsize_n);
+					insert_by_class(lake_tagged, "tagged");
+					insert_by_class(lake_pop, "lake");
+				}
+				
+				function simulate_resampling(){
+					var resample = document.getElementById("pick_resample");
+					 var resample_n = resample.options[resample.selectedIndex].value;
+					// console.log(resample_n);
+					lake_sampled = sample_lake( resample_n);
+					insert_by_class(lake_sampled, "sample");
+				}	
+				
+				function sample_and_tag_lake( n_tag ){
+					lake_pop = shuffle(lake_pop);
+					lake_tagged = lake_pop.slice(0, n_tag); // or n-1?
+					lake_tagged = lake_tagged.map(function(x) { return x + " tagged"; });
+					lake_non_tagged = lake_pop.slice(n_tag, lake_pop.length-1);
+					return shuffle(lake_tagged.concat(lake_non_tagged));
+				}
+				
+				function sample_lake (n_samp){
+					lake_pop = shuffle(lake_pop);
+					return( lake_pop.slice(0, n_samp) ); // or n-1?
+				}
+				
+				
+				// make a long array of fish using proportions from a lake
+				function make_lake( min_n, max_n, lake_type){
+					console.log("### Lake Type = "+lake_type);
+					var inipop=[];
+					var lake_N;
+					var fish_props =[];
+					
+					if(lake_type == "random"){
+						console.log("!New Random Lake!!")
+						//random sized lake
+						lake_N = min_n + Math.floor((max_n-min_n)*Math.random());
+						
+						//random proportions of fish in the lake
+						for (j=0; j< fish.length; j++){
+							var propsum = fish_props.reduce(function (a, b) { return a + b; }, 0); // sum the array
+						
+							if(j==fish.length-1){
+								fish_props.push(1 - propsum);
+							}
+							else{
+								fish_props.push( Math.max( (1-propsum)/(fish.length-j+1)*Math.random(),(1-propsum)/(2*fish.length) ));
+							}
+						}
+					}
+					else {
+						if (lake_type=="CDA"){
+							lake_N =1575;
+							fish_props = [.525,.3,.175];
+						}
+						if (lake_type=="Payette"){
+							lake_N = 2022;
+							fish_props = [.385,.285,1-(.385+.285)]
+						}
+						if(lake_type =="Anderson"){
+							lake_N = 2060;
+							fish_props = [.26,.33,.41]
+						}
+						
+					}
+					
+					
+					//console.info(fish_props);
+					for (j=0; j< fish.length; j++){
+						var temp_n = Math.round(lake_N*fish_props[j]);
+						//console.log(temp_n);
+						var new_pop = Array.apply(null, Array(temp_n)).map(function (x, i) { 
+												return fish[j]; 
+											});
+						//console.info(new_pop);
+						inipop = inipop.concat(new_pop);
+						console.log( 'Number of '+fish[j]+' = '+temp_n );
+						
+					
+					}
+					lake_N = inipop.length;
+					console.log( 'Total lake population = '+lake_N );
+					return shuffle(inipop);
+				}
+				
+				// convert an array of class names to a bunch of html DOM elements
+				function insert_by_class (class_array, targetid){
+					var target = document.getElementById(targetid);
+					target.innerHTML = "";
+					for (var c in class_array) {
+						var newElement = document.createElement('div');
+						newElement.className = class_array[c];
+						target.appendChild(newElement);
+					}
+				}
+				// randomize an array
+				function shuffle(array) {
+					  var currentIndex = array.length, temporaryValue, randomIndex;
+					
+					  // While there remain elements to shuffle...
+					  while (0 !== currentIndex) {
+					
+						// Pick a remaining element...
+						randomIndex = Math.floor(Math.random() * currentIndex);
+						currentIndex -= 1;
+					
+						// And swap it with the current element.
+						temporaryValue = array[currentIndex];
+						array[currentIndex] = array[randomIndex];
+						array[randomIndex] = temporaryValue;
+					  }
+					
+					  return array;
+				}
+				
+			}); // end document.ready
+		})(jQuery);
+		</script>
+		 
 </body>
 </html>
