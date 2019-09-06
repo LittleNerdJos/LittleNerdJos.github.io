@@ -47,10 +47,8 @@
   <body>
     <h1>Fish Taggers</h1>
 						
-	<div class="entry-content">
-
 <p>This app simulates the &ldquo;sample-tag-resample&rdquo; method for estimating the <a href="https://idoteach.boisestate.edu/modal/fish/" target="_blank" rel="noopener">population of fish in a lake</a>. The simulator creates a random number of fish of 3 types, depending on your choice of lake (if random, a new lake is generated). </p>
-<div id="sim-settings">
+<div id="sim-settings" class="row well">
 <div class="model-choice pick-lake-type">
 <h4>Choose a Lake</h4>
 <p><input type="radio" name="pick_lake_type" value="random" id="random" checked><label for="random"> Random</label><br><input type="radio" name="pick_lake_type" value="CDA" id="CDA"><label for="CDA"> Lake Coeur d&rsquo;Alene</label><br><input type="radio" name="pick_lake_type" value="Payette" id="Payette"><label for="Payette"> Payette Lake</label><br><input type="radio" name="pick_lake_type" value="Anderson" id="Anderson"><label for="Anderson"> Anderson Ranch Reservoir</label>
@@ -64,20 +62,59 @@
 <p><!-- <label class="dropdown" for="pick_resample"> --><select id="pick_resample" title="Number of Fish to Resample"><option value="10">10</option><option value="20">20</option><option value="30">30</option><option selected value="40">40</option><option value="50">50</option><option value="100">100</option></select><br><!-- </label> --></p>
 </div>
 </div>
-<p><!-- close #sim-settings --><br></p>
-<div class="list"><p class="trigger"><a href="#">Step 1. Tag a Random Sample of Fish</a></p><div class="toggle_container"><div class="block">
-<div class="button noborder large" style="position: relative; right: 20px;"><a id="run-sample" class="btn btn-lg btn-primary" href="#">Sample and Tag Fish</a></div>
-<div id="tagged"></div>
-<p></p></div></div></div><br>
-<div class="list"><p class="trigger"><a href="#">Step 2. Resample Fish (after tagging)</a></p><div class="toggle_container"><div class="block">
-<div class="button noborder large" style="position: relative; right: 20px;"><a id="run-resample" class="btn btn-lg btn-primary" style="display: none;" href="#">Resample Fish</a></div>
-<div id="sample"></div>
-<p></p></div></div></div><br>
-<div class="list"><p><a href="#fish_container" data-toggle="collapse" class="btn btn-secondary" role="button" aria-expanded="false" aria-controls="fish_container">All Fish in Lake</a></p
-	><div class="collapse" id="fish_container"><div class="block">
-<div id="lake"></div>
-<p></p></div></div></div>
-				</div><!-- .entry-content -->
+
+
+<p></p></div></div>
+</div><!-- close sim-settings -->
+
+<div id="accordion">
+		<div class="card">
+		  <div class="card-header" id="headingOne">
+			<h5 class="mb-0">
+			  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					Step 1. Tag a Random Sample of Fish
+			  </button>
+			</h5>
+		  </div>
+	  
+		  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+			<div class="card-body">
+					<a id="run-sample" class="btn btn-lg btn-primary" href="#">Sample and Tag Fish</a>
+					<div id="tagged"></div>			
+				</div>
+		  </div>
+		</div>
+		<div class="card">
+		  <div class="card-header" id="headingTwo">
+			<h5 class="mb-0">
+			  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					Step 2. Resample Fish (after tagging)
+			  </button>
+			</h5>
+		  </div>
+		  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+			<div class="card-body">
+					<a id="run-resample" class="btn btn-lg btn-primary" style="display: none;" href="#">Resample Fish</a>  
+					<div id="sample"></div>
+			</div>
+		  </div>
+		</div>
+		<div class="card">
+		  <div class="card-header" id="headingThree">
+			<h5 class="mb-0">
+			  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					All Fish in Lake
+			  </button>
+			</h5>
+		  </div>
+		  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+			<div class="card-body">
+					<div id="lake"></div>			
+				</div>
+		  </div>
+		</div>
+	  </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
