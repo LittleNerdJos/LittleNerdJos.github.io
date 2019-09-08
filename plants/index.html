@@ -28,8 +28,9 @@
               This is an online app for thinking about the spread of <a href="https://en.wikipedia.org/wiki/Invasive_species">invasive plants</a> (especially <a href="https://en.wikipedia.org/wiki/Weed">weeds</a>).
 </p>
 <div class="card card-body bg-light">
-       <div class="row">
+              
               <h5>Simulation Settings</h5>
+              
               <div class="model-choice pick-num-weeds col-md-4">
                      <h5>How Many Starting Spots?</h5>
                      <label for="pick_start"><select id="pick_start">
@@ -71,19 +72,18 @@
                      <div class="switch"><input id="toggle-random" class="cmn-toggle cmn-toggle-round"
                                    type="checkbox" /><label for="toggle-random"></label></div>
               </div>
-
-       </div>
-
- <a class = "btn btn-lg btn-primary m-3" id = "next-year">Next Year</a>
+<div class="btn-group">
+              <a class = "btn btn-lg btn-primary m-3" id = "next-year">Next Year</a>
  <a class = "btn btn-lg btn-secondary m-3" id = "more-fields">Add a Field</a>
  <a class = "btn btn-lg btn-secondary m-3" id = "reset-model">Reset</a>
-<div id="slider"></div>
-</div>
-<div class="row">
-     <div id="land_wrapper"></div>  
 </div>
 
-<div class="row bg-light border">
+<div id="slider"></div>
+</div>
+
+     <div id="land_wrapper" class="py-3"></div>  
+
+<div class="card card-body bg-light border">
        <h2>Questions to Consider</h2>
 <figure>
  <img class="wp-image-5312 size-thumbnail" title="Space Invaders" src="https://i.ibb.co/W3KJkrL/invader-42007-960-720.png" alt="invader-42007_960_720" width="150" height="150" /> 
@@ -233,7 +233,7 @@
               </div>
        </div>
 </div>
-<div class="row footer">
+<div class="footer">
               <h3>Who Can I Contact About This?</h3>
               Joe Champion made this simulator in May 2016 for an upcoming professional development program at Boise State. The easiest way to contact him is via email: joechampion@boisestate.edu
               
