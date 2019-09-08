@@ -60,28 +60,31 @@
 		</div>
 		<div id="sim-settings" class="row">
 			<div class="card card-body bg-light">
-				<div class="model-choice pick-lake-type row">
-					<h4>Choose a Lake</h4>
-					<div class="btn-group btn-group-toggle">
-		
-						<label class="btn active btn-secondary mx-2"><input type="radio" name="pick_lake_type" value="random"
-								id="random" checked>Random</label>
-		
-						<label class="btn btn-secondary mx-2"><input type="radio" name="pick_lake_type" value="CDA"
-								id="CDA">Lake Coeur d&rsquo;Alene</label>
-		
-						<label class="btn btn-secondary mx-2"> <input type="radio" name="pick_lake_type" value="Payette"
-								id="Payette">Payette Lake</label>
-		
-						<label class="btn btn-secondary mx-2"><input type="radio" name="pick_lake_type" value="Anderson"
-								id="Anderson"> Anderson Ranch Reservoir</label>
-		
+				<div class="row">
+					<div class="model-choice pick-lake-type col">
+						<h5>Choose a Lake</h5>
+						<div class="btn-group btn-group-toggle">
+	
+							<label class="btn active btn-secondary mx-2"><input type="radio" name="pick_lake_type"
+									value="random" id="random" checked>Random</label>
+	
+							<label class="btn btn-secondary mx-2"><input type="radio" name="pick_lake_type" value="CDA"
+									id="CDA">Lake Coeur d&rsquo;Alene</label>
+	
+							<label class="btn btn-secondary mx-2"> <input type="radio" name="pick_lake_type" value="Payette"
+									id="Payette">Payette Lake</label>
+	
+							<label class="btn btn-secondary mx-2"><input type="radio" name="pick_lake_type" value="Anderson"
+									id="Anderson"> Anderson Ranch Reservoir</label>
+	
+						</div>
 					</div>
 				</div>
+	
 				<div class="row">
-					<div class="model-choice pick-sampsize md-3">
-						<h4>Number of Fish to Sample &amp; Tag</h4>
-		
+					<div class="model-choice pick-sampsize col md-6">
+						<h5>Number of Fish to Sample &amp; Tag</h5>
+	
 						<select id="pick_sampsize" title="Number of Fish" class="form-control">
 							<option value="10">10</option>
 							<option value="20">20</option>
@@ -98,10 +101,10 @@
 							<option value="400">400</option>
 							<option value="500">500</option>
 						</select><br>
-		
+	
 					</div>
-					<div class="model-choice pick-sampsize md-3">
-						<h4>Number of Fish to Resample after Tagging</h4>
+					<div class="model-choice pick-sampsize col md-3">
+						<h5>Number of Fish to Resample after Tagging</h5>
 						<div class="input-group">
 							<select id="pick_resample" title="Number of Fish to Resample" class="form-control">
 								<option value="10">10</option>
@@ -114,9 +117,10 @@
 						</div>
 					</div>
 				</div>
-		
+	
 			</div>
 		</div>
+		<div class="row">
 			<div id="accordion">
 				<div class="card">
 					<div class="card-header" id="headingOne">
@@ -169,6 +173,8 @@
 				</div>
 			</div>
 		</div>
+	
+	</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
