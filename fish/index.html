@@ -60,64 +60,63 @@
 		</div>
 		<div id="sim-settings" class="row">
 			<div class="card card-body bg-light">
-				<div class="model-choice pick-lake-type">
-					<div class="row">
-						<h4>Choose a Lake</h4>
-						<div class="btn-group btn-group-toggle">
-	
-							<label class="btn active btn-secondary mx-2"><input type="radio" name="pick_lake_type"
-									value="random" id="random" checked>Random</label>
-	
-							<label class="btn btn-secondary mx-2"><input type="radio" name="pick_lake_type" value="CDA"
-									id="CDA">Lake Coeur d&rsquo;Alene</label>
-	
-							<label class="btn btn-secondary mx-2"> <input type="radio" name="pick_lake_type" value="Payette"
-									id="Payette">Payette Lake</label>
-	
-							<label class="btn btn-secondary mx-2"><input type="radio" name="pick_lake_type" value="Anderson"
-									id="Anderson"> Anderson Ranch Reservoir</label>
-	
-						</div>
+				<div class="model-choice pick-lake-type row">
+					<h4>Choose a Lake</h4>
+					<div class="btn-group btn-group-toggle">
+		
+						<label class="btn active btn-secondary mx-2"><input type="radio" name="pick_lake_type" value="random"
+								id="random" checked>Random</label>
+		
+						<label class="btn btn-secondary mx-2"><input type="radio" name="pick_lake_type" value="CDA"
+								id="CDA">Lake Coeur d&rsquo;Alene</label>
+		
+						<label class="btn btn-secondary mx-2"> <input type="radio" name="pick_lake_type" value="Payette"
+								id="Payette">Payette Lake</label>
+		
+						<label class="btn btn-secondary mx-2"><input type="radio" name="pick_lake_type" value="Anderson"
+								id="Anderson"> Anderson Ranch Reservoir</label>
+		
 					</div>
-					<div class="row">
-						<div class="model-choice pick-sampsize md-3">
-							<h4>Number of Fish to Sample &amp; Tag</h4>
-	
-							<select id="pick_sampsize" title="Number of Fish" class="form-control">
+				</div>
+				<div class="row">
+					<div class="model-choice pick-sampsize md-3">
+						<h4>Number of Fish to Sample &amp; Tag</h4>
+		
+						<select id="pick_sampsize" title="Number of Fish" class="form-control">
+							<option value="10">10</option>
+							<option value="20">20</option>
+							<option value="30">30</option>
+							<option value="40">40</option>
+							<option value="50">50</option>
+							<option value="60">60</option>
+							<option value="70">70</option>
+							<option selected value="80">80</option>
+							<option value="90">90</option>
+							<option value="100">100</option>
+							<option value="200">200</option>
+							<option value="300">300</option>
+							<option value="400">400</option>
+							<option value="500">500</option>
+						</select><br>
+		
+					</div>
+					<div class="model-choice pick-sampsize md-3">
+						<h4>Number of Fish to Resample after Tagging</h4>
+						<div class="input-group">
+							<select id="pick_resample" title="Number of Fish to Resample" class="form-control">
 								<option value="10">10</option>
 								<option value="20">20</option>
 								<option value="30">30</option>
-								<option value="40">40</option>
+								<option selected value="40">40</option>
 								<option value="50">50</option>
-								<option value="60">60</option>
-								<option value="70">70</option>
-								<option selected value="80">80</option>
-								<option value="90">90</option>
 								<option value="100">100</option>
-								<option value="200">200</option>
-								<option value="300">300</option>
-								<option value="400">400</option>
-								<option value="500">500</option>
 							</select><br>
-	
-						</div>
-						<div class="model-choice pick-sampsize md-3">
-							<h4>Number of Fish to Resample after Tagging</h4>
-							<div class="input-group">
-								<select id="pick_resample" title="Number of Fish to Resample" class="form-control">
-									<option value="10">10</option>
-									<option value="20">20</option>
-									<option value="30">30</option>
-									<option selected value="40">40</option>
-									<option value="50">50</option>
-									<option value="100">100</option>
-								</select><br>
-							</div>
 						</div>
 					</div>
-	
 				</div>
+		
 			</div>
+		</div>
 			<div id="accordion">
 				<div class="card">
 					<div class="card-header" id="headingOne">
