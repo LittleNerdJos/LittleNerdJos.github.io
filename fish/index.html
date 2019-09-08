@@ -62,22 +62,29 @@
 			<div class="col card card-body bg-light">
 				<div class="model-choice pick-lake-type">
 					<h4>Choose a Lake</h4>
-					<div class="input-group">
-						<input type="radio" name="pick_lake_type" value="random" id="random" checked class="form-control">
-						<label for="random">
-							Random</label>
-						<input type="radio" name="pick_lake_type" value="CDA" id="CDA" class="form-control">
-						<label for="CDA">
-							Lake Coeur d&rsquo;Alene</label>
-						<input type="radio" name="pick_lake_type" value="Payette" id="Payette" class="form-control">
-						<label for="Payette"> Payette Lake</label>
-						<input type="radio" name="pick_lake_type" value="Anderson" id="Anderson" class="form-control">
-						<label for="Anderson"> Anderson Ranch Reservoir</label>
-						<div>
+					<div class="d-block">
+						<div class="custom-control custom-radio">
+							<input type="radio" name="pick_lake_type" value="random" id="random" checked class="custom-control-input">
+							<label for="random">
+								Random</label></div>
+						<div class="custom-control custom-radio">
+							<input type="radio" name="pick_lake_type" value="CDA" id="CDA" class="custom-control-input">
+							<label for="CDA">
+								Lake Coeur d&rsquo;Alene</label>
 						</div>
+						<div class="custom-control custom-radio">
+							<input type="radio" name="pick_lake_type" value="Payette" id="Payette" class="custom-control-input">
+							<label for="Payette"> Payette Lake</label>
+						</div>
+						<div class="custom-control custom-radio">
+							<input type="radio" name="pick_lake_type" value="Anderson" id="Anderson" class="custom-control-input">
+							<label for="Anderson"> Anderson Ranch Reservoir</label>
+						</div>
+					
+					</div>
 						<div class="model-choice pick-sampsize">
 							<h4>Number of Fish to Sample &amp; Tag</h4>
-							<div class="input-group">
+							
 								<select id="pick_sampsize" title="Number of Fish" class="form-control">
 									<option value="10">10</option>
 									<option value="20">20</option>
@@ -94,7 +101,7 @@
 									<option value="400">400</option>
 									<option value="500">500</option>
 								</select><br>
-							</div>
+							
 						</div>
 						<div class="model-choice pick-sampsize">
 							<h4>Number of Fish to Resample after Tagging</h4>
@@ -108,9 +115,7 @@
 									<option value="100">100</option>
 								</select><br>
 							</div>
-						</div>
-					</div>
-	
+						</div>	
 				</div>
 	
 				<div id="accordion">
