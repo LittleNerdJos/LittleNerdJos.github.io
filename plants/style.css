@@ -21,7 +21,7 @@
 	max-width:75px;
 	max-height:75px;
 }
-.entry-content p.timestep{
+p.timestep{
 	margin: auto auto;
     font-size: 30px;
     color: #fff !important;
@@ -59,14 +59,6 @@
 }
 .weed-3{
 	background-image: url("https://i.ibb.co/SKZ6ZR1/puncturevine.jpg");					
-}
-/*Theme Fixes*/
-.entry-content ul > li {
-	background:none;
-	padding-left:inherit;
-}
-.entry-content{
-	position:relative;
 }
 
 /* TOGGLE SWITCH*/
@@ -119,30 +111,6 @@ input#toggle-random:checked + label:after {
   margin-left: 30px;
 }
 
-/*DROPDOWN*/
-label.dropdown select {
-	padding: 0 10px;
-	background: #f8f8f8;
-	color: #444;
-  	font-size:16px !important;
-	border: 1px solid #aaa;
-	border-radius: 0;
-	display: inline-block;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	cursor: pointer;
-	outline: none;
-}
-label.dropdown select:-moz-focusring {
-	color: transparent;
-	text-shadow: 0 0 0 #444;
-}
-label.dropdown select::-ms-expand {
-	display: none;
-}
-
-label.dropdown { position: relative; }
 
 
 /*! jQuery UI - v1.8.24 - 2012-09-28

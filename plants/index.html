@@ -16,11 +16,10 @@
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script>if (window.module) module = window.module;</script>
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-
 </head> 
 <body>
        <div class="container">
-       
+
               <h1>Plant Invaders</h1>
        
               <p class="lead">
@@ -28,10 +27,10 @@
                             href="https://en.wikipedia.org/wiki/Invasive_species">invasive plants</a> (especially <a
                             href="https://en.wikipedia.org/wiki/Weed">weeds</a>).
               </p>
-              <div class="row bg-light">
+              <div class="bg-light">
        
                      <h5>Simulation Settings</h5>
-       
+       <div class="row">
                      <div class="model-choice pick-num-weeds col-md-4">
                             <h5>How Many Starting Spots?</h5>
                             <label for="pick_start"><select id="pick_start">
@@ -68,17 +67,18 @@
                             </label>
        
                      </div>
+              </div>
                      <div class="model-choice pick-init">
                             <h5>Choose Your Own Starting Spots?</h5>
                             <div class="switch"><input id="toggle-random" class="cmn-toggle cmn-toggle-round"
                                           type="checkbox" /><label for="toggle-random"></label></div>
                      </div>
                      <div class="btn-group">
-                            <a class="btn btn-lg btn-primary m-3" id="next-year">Next Year</a>
-                            <a class="btn btn-lg btn-secondary m-3" id="more-fields">Add a Field</a>
-                            <a class="btn btn-lg btn-secondary m-3" id="reset-model">Reset</a>
+                            <a class="btn btn-lg btn-primary m-3" id="next-year" href="#">Next Year</a>
+                            <a class="btn btn-lg btn-secondary m-3" id="more-fields" href="#">Add a Field</a>
+                            <a class="btn btn-lg btn-secondary m-3" id="reset-model" href="#">Reset</a>
                      </div>
-                     <div id="slider"></div>
+                     <div id="slider" style="width:300px;"></div>
               </div>
               <div class="row py-3">
                      <div id="land_wrapper"></div>
