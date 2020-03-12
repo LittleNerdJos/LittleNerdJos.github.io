@@ -6,6 +6,9 @@
 	float:left;
 	clear:left;
 }
+.land-box.occupied {
+    background-color: #333;
+}
 .land-box {
 	background: #efefef;
 	border:2px solid #333;
