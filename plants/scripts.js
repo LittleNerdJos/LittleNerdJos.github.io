@@ -187,9 +187,8 @@
 		land_squares();
 		
 		//show a silly picture at random
-		//var rand_pic = ['https://idoteach.boisestate.edu/wp-content/uploads/2016/05/cow_moo.jpg',
-						//'https://idoteach.boisestate.edu/wp-content/uploads/2016/05/sillycat.jpg'];
-		var rand_pic = ['', ''];
+		var rand_pic = ['./cow_moo.jpg','./sillycat.jpg'];
+		// var rand_pic = ['', ''];
 		var x_rand = Math.floor(Math.random()*gridN);
 		var y_rand = Math.floor(Math.random()*gridN);
 		if (Math.random()<1/15 && nRuns > 10 ){
